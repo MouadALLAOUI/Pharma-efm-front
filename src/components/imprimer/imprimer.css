@@ -1,0 +1,37 @@
+.print{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.active-print svg g g g path{
+  fill: #A70505;
+}
+
+.print:hover{
+  cursor: pointer;
+  color: #A70505;
+}
+
+.print:hover svg g g g path{
+  fill: #A70505;
+}
+
+.print span{
+  position: relative;
+  top: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 950px) {
+  .print svg{
+    width: 22px;
+    height: 22px;
+    transform: translateX(10px) translateY(5px) scale(1) !important;
+  }
+
+  .print span{
+    font-size: 18px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,75 @@
+.option-rapport {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.2vh 3vw;
+}
+
+.boutton-filtrer-rapport {
+  background-color: #A70505;
+  /* width: 471px; */
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Inder', sans-serif;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.desc {
+
+  font-family: 'Inder';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #000000;
+  margin: 25px 0;
+  align-items: end;
+}
+
+.medicament-name {
+  color: #547654;
+}
+
+.table-medicament-rapport{
+  margin: 0vh 3vw;
+  overflow-x: auto;
+}
+
+@media (max-width: 1250px) {
+  .desc {
+    font-size: 28px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desc {
+    font-size: 23px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .desc {
+    font-size: 20px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .desc {
+    font-size: 18px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 707px) {
+  .desc {
+    font-size: 20px;
+    margin: 25px 0;
+  }
+}

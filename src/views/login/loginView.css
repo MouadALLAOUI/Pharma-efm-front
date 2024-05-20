@@ -1,0 +1,265 @@
+:root {
+    --main-bg-color: #FFF;
+    --main-width:100%;
+    --main-height: 100vh;
+    --font-family:'Inder';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.LoginPage {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: var(--main-width);
+    height: var(--main-height);
+    overflow: hidden;
+    background: var(--main-bg-color);
+}
+
+.LoginBackgound {
+    width: 100%;
+    /* height: var(--main-height); */
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.LoginLogo {
+    position: absolute;
+    width: 14vh;
+    height: 15vh;
+    left: 6.5vh;
+    top: 7vh;
+}
+
+.LoginLogoName {
+    position: absolute;
+    width: 5vh;
+    height: 4vh;
+    left: 6.5vh;
+    top: 22.5vh;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.7vh;
+    line-height: 45px;
+
+    color: #DA1C1C;
+}
+
+.overBackround {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: var(--main-width);
+    height: 100%;
+    background-color: rgba(173, 221, 70, 0.3);
+}
+
+.LoginForm {
+    position: absolute;
+    left: 66vw;
+    top: 48vh;
+}
+
+.LoginForm>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 22vw;
+    height: 38vh;
+    background: var(--main-bg-color);
+    border-radius: 15px;
+}
+
+.LoginForm>form>p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 40px;
+    color: #000000;
+    margin: 0 2.5vh;
+}
+
+.LoginForm>form>#userName {
+    box-sizing: border-box;
+    width: 87%;
+    height: 6.5vh;
+}
+
+.LoginForm>form>#userPass {
+    box-sizing: border-box;
+    width: 87%;
+    height: 6.5vh;
+}
+
+.LoginForm>form>input {
+    padding: 0vh 2vh;
+    background: var(--main-bg-color);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 0 2.5vh;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 31px;
+
+    color: #625F5F;
+}
+
+.LoginForm>form>.loginSubmit {
+    padding: 0vh 2vh;
+    cursor: pointer;
+    width: 87%;
+    height: 6.5vh;
+    margin: 0 2.5vh;
+    background: #ca1919;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 40px;
+    text-align: start;
+    color: #FFFFFF;
+}
+
+.LoginForm>form>.loginSubmit:hover {
+    background-color: #ca1919;
+    box-shadow: 2px 2px 2px rgb(229, 229, 229);
+    transition-property: bottom;
+    transition-duration: 3s;
+    position: relative;
+    bottom: 5px;
+}
+
+@media (max-width: 1450px) {
+    .LoginLogo {
+        width: 87px;
+        height: 100px;
+    }
+    
+    .LoginLogoName {
+        top: 135px;
+        font-size: 22px;
+    }
+
+    .LoginForm {
+        left: 65vw;
+        top: 48vh;
+    }
+
+    .LoginForm form {
+        font-size: 10px !important;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .LoginForm {
+        left: 60vw;
+        top: 48vh;
+    }
+}
+
+@media (max-width: 1150px) {
+    .LoginLogo {
+        left: 35px;
+        top: 35px;
+    }
+    
+    .LoginLogoName {
+        left: 35px;
+    }
+
+    .LoginPage {
+        overflow-y: visible;
+    }
+
+    .LoginForm {
+        position: relative;
+        top: 600px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .LoginForm form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 920px) {
+    .LoginLogo {
+        width: 67px;
+        height: 80px;
+        left: 35px;
+        top: 35px;
+    }
+    
+    .LoginLogoName {
+        top: 110px;
+        left: 35px;
+        font-size: 18px;
+    }
+
+    .LoginForm {
+        top: 510px;
+    }
+}
+
+@media (max-width: 770px) {
+    .LoginLogo {
+        width: 57px;
+        height: 67px;
+        left: 35px;
+        top: 35px;
+    }
+    
+    .LoginLogoName {
+        top: 95px;
+        left: 35px;
+        font-size: 15px;
+    }
+
+    .LoginForm {
+        top: 430px;
+    }
+}
+
+@media (max-width: 650px) {
+    .LoginForm {
+        top: 380px;
+    }
+}
+
+@media (max-width: 570px) {
+    .LoginLogo {
+        width: 47px;
+        height: 55px;
+        left: 20px;
+        top: 20px;
+    }
+    
+    .LoginLogoName {
+        top: 60px;
+        left: 20px;
+        font-size: 13px;
+    }
+
+    .LoginForm {
+        top: 330px;
+    }
+}

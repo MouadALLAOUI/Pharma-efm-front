@@ -1,0 +1,48 @@
+.tableau{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th{
+  border-bottom: solid 3px #9D0F0F;
+  font-size: 23px;
+  padding: 10px 1.7vw;
+}
+
+td{
+  border-bottom: solid 1px #9D0F0F;
+  font-size: 23px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 60px;
+}
+
+.editer{
+  cursor: pointer;
+  color: #509E4F;
+}
+
+.editer:hover{
+  color: #2c562b;
+}
+
+.supprimer{
+  cursor: pointer;
+  color: #A70505;
+}
+
+.supprimer:hover{
+  color: #DA1C1C;
+}
+
+@media (max-width: 950px) {
+  .th {
+    font-size: 17px;
+  }
+
+  td{
+    font-size: 17px;
+    height: 40px;
+  }
+}

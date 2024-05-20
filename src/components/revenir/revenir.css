@@ -1,0 +1,37 @@
+.return{
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+}
+
+.active-return svg g path{
+  fill: #A70505;
+}
+
+.return:hover{
+  cursor: pointer;
+  color: #A70505;
+}
+
+.return:hover svg g path{
+  fill: #A70505;
+}
+
+.return span{
+  position: relative;
+  top: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 950px) {
+  .return svg{
+    width: 22px;
+    height: 22px;
+    transform: translateX(40px) translateY(6px) scale(1) !important;
+  }
+
+  .return span{
+    font-size: 18px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,36 @@
+.filtrer{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.active-filtre svg path{
+  stroke: #A70505;
+}
+
+.filtrer:hover{
+  cursor: pointer;
+  color: #A70505;
+}
+
+.filtrer:hover svg path{
+  stroke: #A70505;
+}
+
+.filtrer span{
+  position: relative;
+  top: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 950px) {
+  .filtrer svg{
+    width: 26px;
+    height: 26px;
+  }
+
+  .filtrer span{
+    font-size: 18px;
+    top: 5px;
+  }
+}
